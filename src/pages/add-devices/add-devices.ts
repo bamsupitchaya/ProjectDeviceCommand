@@ -18,4 +18,7 @@ export class AddDevicesPage {
   checkStatus(){
     this.navCtrl.push(StatusDevicesPage);
   }
+  addDevice(){
+    this.navCtrl.push(StatusDevicesPage);
+  }
 }

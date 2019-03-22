@@ -15,6 +15,7 @@ import { CommandPage } from '../pages/command/command';
 import { RegisterPage } from '../pages/register/register';
 import { StatusDevicesPage } from '../pages/status-devices/status-devices';
 import { SpeechRecognition } from '@ionic-native/speech-recognition/ngx';
+import { AuthSystemProvider } from '../providers/auth-system/auth-system';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { SpeechRecognition } from '@ionic-native/speech-recognition/ngx';
     StatusBar,
     SplashScreen,
     SpeechRecognition,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AuthSystemProvider
   ]
 })
 export class AppModule {}

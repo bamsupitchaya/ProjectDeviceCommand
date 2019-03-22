@@ -19,11 +19,12 @@ export class CommandPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad CommandPage');
   }
-  speechTo(){
-    this.speechRecognition.startListening().subscribe(
-      (matches:string[]) => console.log(matches)
-    )
-  }
+  //speechTo(){
+  //  this.speechRecognition.startListening().subscribe(
+    //  (matches:string[]) => console.log(matches)
+    //)
+  //}
+
   addDevice(){
     this.navCtrl.push(AddDevicesPage);
   }
