@@ -10,6 +10,11 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { AddDevicesPage } from '../pages/add-devices/add-devices';
+import { CommandPage } from '../pages/command/command';
+import { RegisterPage } from '../pages/register/register';
+import { StatusDevicesPage } from '../pages/status-devices/status-devices';
+import { SpeechRecognition } from '@ionic-native/speech-recognition/ngx';
 
 @NgModule({
   declarations: [
@@ -17,7 +22,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    AddDevicesPage,
+    CommandPage,
+    RegisterPage,
+    StatusDevicesPage
   ],
   imports: [
     BrowserModule,
@@ -29,11 +38,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    AddDevicesPage,
+    CommandPage,
+    RegisterPage,
+    StatusDevicesPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    SpeechRecognition,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -1,5 +1,7 @@
 {
   "name": "ProjectDeviceCommand",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

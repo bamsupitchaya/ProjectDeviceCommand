@@ -1,0 +1,19 @@
+
+<ion-header>
+  <ion-navbar color="CadetBlue">
+    <ion-title>VOICE COMMAND</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding text-center>
+<ion-fab right>
+  <button ion-fab color="danger" (click)="addDevice()">
+    <ion-icon name="add"></ion-icon>
+  </button>
+</ion-fab>
+<ion-list>
+  <img src="../../assets/imgs/Micro1.png" (click)="speechTo()"><br>
+  Please talk something!?
+</ion-list>
+  <button ion-button block color="CadetBlue" (click)="checkStatus()">CHECK STATUS DEVICES</button>
+</ion-content>
